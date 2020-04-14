@@ -14,3 +14,4 @@
 /app/libs/drawing-release.aar
 /app/libs/extensions-release.aar
 /app/src/main/assets/armeabi-v7a
+/app/.cxx/cmake/*

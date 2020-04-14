@@ -110,7 +110,7 @@ public class FifoChartsFragment extends ExampleBaseFragment {
             fakeHardwareSensor = true;
         }
 
-        final DateAxis xAxis = sciChartBuilder.newDateAxis()/*.withVisibleRange(xVisibleRange)*/.withAutoRangeMode(AutoRange.Never).build();
+        final DateAxis xAxis = sciChartBuilder.newDateAxis().withAutoRangeMode(AutoRange.Always).build();
         final NumericAxis yAxis = sciChartBuilder.newNumericAxis().withGrowBy(0.1d, 0.1d).withAutoRangeMode(AutoRange.Always).build();
 
         final IRenderableSeries rs = sciChartBuilder.newLineSeries().withDataSeries(ds1).withStrokeStyle(0xFF4083B7, 2f, true).build();
